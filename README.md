@@ -32,3 +32,65 @@ To install the components, you can clone this repository and install the necessa
 git clone https://github.com/yourusername/react-components.git
 cd react-components
 npm install
+```
+
+## Usage
+
+Here is an example of how to use one of the components from this repository:
+
+```jsx
+import React from 'react';
+import { Button } from './components/Button';
+
+const App = () => {
+  return (
+    <div>
+      <h1>Welcome to My App</h1>
+      <Button onClick={() => alert('Button clicked!')}>Click Me</Button>
+    </div>
+  );
+};
+
+export default App;
+```
+
+## Component Documentation
+
+# Button
+A simple, customizable button component.
+
+# Props
+onClick: Function to call when the button is clicked.
+children: Content to be displayed inside the button.
+style: Optional styles to apply to the button.
+Example:
+```jsx
+<Button onClick={() => alert('Hello!')} style={{ backgroundColor: 'blue', color: 'white' }}>
+  Say Hello
+</Button>
+```
+
+# Input
+A reusable input component with validation support.
+
+# Props
+value: The input value.
+onChange: Function to call when the input value changes.
+placeholder: Placeholder text for the input field.
+type: The type of input (e.g., text, password, email).
+Example:
+```jsx
+<Input
+  value={inputValue}
+  onChange={(e) => setInputValue(e.target.value)}
+  placeholder="Enter your text here"
+  type="text"
+/>
+```
+More components and their documentation can be found in the docs directory.
+
+# Contributing
+Contributions are welcome! Please read our Contributing Guidelines for more information.
+
+# License
+This project is licensed under the MIT License. See the LICENSE file for more details.
