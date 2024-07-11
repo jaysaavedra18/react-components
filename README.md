@@ -56,10 +56,10 @@ export default App;
 
 ## Component Documentation
 
-# Button
+### Button
 A simple, customizable button component.
 
-# Props
+### Props
 onClick: Function to call when the button is clicked.
 children: Content to be displayed inside the button.
 style: Optional styles to apply to the button.
@@ -70,10 +70,10 @@ Example:
 </Button>
 ```
 
-# Input
+### Input
 A reusable input component with validation support.
 
-# Props
+### Props
 value: The input value.
 onChange: Function to call when the input value changes.
 placeholder: Placeholder text for the input field.
@@ -89,8 +89,8 @@ Example:
 ```
 More components and their documentation can be found in the docs directory.
 
-# Contributing
+## Contributing
 Contributions are welcome! Please read our Contributing Guidelines for more information.
 
-# License
+## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
