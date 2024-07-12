@@ -23,32 +23,7 @@ const data = [
         id: 4,
         question: "Which game features the iconic character Lara Croft?",
         answer: "Tomb Raider."
-    },
-    // {
-    //     id: 5,
-    //     question: "What is the name of the city in which the game Cyberpunk 2077 is set?",
-    //     answer: "Night City."
-    // },
-    // {
-    //     id: 6,
-    //     question: "In which game do players control a character named Link?",
-    //     answer: "The Legend of Zelda."
-    // },
-    // {
-    //     id: 7,
-    //     question: "What is the main goal in the game 'Among Us'?",
-    //     answer: "To complete tasks and identify impostors."
-    // },
-    // {
-    //     id: 8,
-    //     question: "Which game series is known for its 'Animus' machine and historical settings?",
-    //     answer: "Assassin's Creed."
-    // },
-    // {
-    //     id: 9,
-    //     question: "What is the name of the post-apocalyptic world in Fallout?",
-    //     answer: "The Wasteland."
-    // }
+    }
 ];
 
 export default data
