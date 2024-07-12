@@ -47,44 +47,46 @@ export default function ImageSlider({ url, limit = 5, page = 1 }) {
   }
 
   return (
-    <div className="container">
-      <BsArrowLeftCircleFill
-        onClick={handlePrevious}
-        className="arrow arrow-left"
-      />{" "}
-      {images && images.length
-        ? images.map((ImageItem, index) => (
-            <img
-              key={ImageItem.id}
-              alt={ImageItem.download_url}
-              src={ImageItem.download_url}
-              className={
-                currentSlide === index
-                  ? "current-image"
-                  : "current-image hide-current-image"
-              }
-            />
-          ))
-        : null}
-      <BsArrowRightCircleFill
-        onClick={handleNext}
-        className="arrow arrow-right"
-      />
-      <span className="circle-indicators">
+    <div className="outer-container">
+      <div className="container">
+        <BsArrowLeftCircleFill
+          onClick={handlePrevious}
+          className="arrow arrow-left"
+        />{" "}
         {images && images.length
-          ? images.map((_, index) => (
-              <button
-                key={index}
+          ? images.map((ImageItem, index) => (
+              <img
+                key={ImageItem.id}
+                alt={ImageItem.download_url}
+                src={ImageItem.download_url}
                 className={
                   currentSlide === index
-                    ? "current-indicator"
-                    : "current-indicator inactive-indicator"
+                    ? "current-image"
+                    : "current-image hide-current-image"
                 }
-                onClick={() => setCurrentSlide(index)}
-              ></button>
+              />
             ))
           : null}
-      </span>
+        <BsArrowRightCircleFill
+          onClick={handleNext}
+          className="arrow arrow-right"
+        />
+        <span className="circle-indicators">
+          {images && images.length
+            ? images.map((_, index) => (
+                <button
+                  key={index}
+                  className={
+                    currentSlide === index
+                      ? "current-indicator"
+                      : "current-indicator inactive-indicator"
+                  }
+                  onClick={() => setCurrentSlide(index)}
+                ></button>
+              ))
+            : null}
+        </span>
+      </div>
     </div>
   );
 }

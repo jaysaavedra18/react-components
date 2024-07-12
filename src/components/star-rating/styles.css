@@ -1,5 +1,8 @@
 
-
+.star-rating {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
 
 .active {
     color: #fff700
